@@ -1,0 +1,15 @@
+let a  = 10;
+console.log(a);
+
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+    i="hello";
+}  
+for (let a=0; a<1000; a++) {
+    console.log(a);
+    print();
+}
+
+function print() {
+    console.log("Hello World");
+    }
