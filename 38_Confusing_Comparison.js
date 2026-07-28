@@ -1,0 +1,1 @@
+//Prompt : 38_confusing_Comparison.js for the ==, === cases in the js.

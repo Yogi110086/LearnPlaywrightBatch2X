@@ -38,3 +38,41 @@ Rules of Identifiers:
 • May contain Unicode letters and Unicode escape sequences.
 • Cannot contain spaces, hyphens, or special characters (except _ and $).
 */
+
+// --- Code Examples ---
+
+/**
+ * Checks if a number is a prime number.
+ * @param {number} num The number to check.
+ * @returns {boolean} True if the number is prime, otherwise false.
+ */
+function isPrime(num) {
+    // Prime numbers must be greater than 1.
+    if (num <= 1) {
+        return false;
+    }
+
+    // 2 is the only even prime number.
+    if (num === 2) {
+        return true;
+    }
+
+    // All other even numbers are not prime.
+    if (num % 2 === 0) {
+        return false;
+    }
+
+    // Check for odd divisors from 3 up to the square root of the number.
+    for (let i = 3; i <= Math.sqrt(num); i += 2) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+
+    // If no divisors were found, the number is prime.
+    return true;
+}
+
+console.log("Is 7 prime?", isPrime(7)); // Output: Is 7 prime? true
+console.log("Is 10 prime?", isPrime(10)); // Output: Is 10 prime? false
+console.log("Is 29 prime?", isPrime(29)); // Output: Is 29 prime? true
