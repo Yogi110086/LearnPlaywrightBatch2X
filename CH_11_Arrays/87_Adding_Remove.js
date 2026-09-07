@@ -8,3 +8,6 @@ console.log(arr);
 
 arr.splice(2, 0, 99);
 console.log(arr)
+
+
+// insert(), add()
