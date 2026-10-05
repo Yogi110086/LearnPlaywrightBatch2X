@@ -18,3 +18,4 @@ console.log(doubleInt(10)); // 20
 
 const printInt = n => console.log(n);
 printInt("Dutta"); // Dutta
+
